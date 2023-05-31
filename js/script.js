@@ -167,51 +167,7 @@ var swiper = new Swiper(".types-slider", {
    }
  });
 
- var modal1 = document.getElementById('gallery1');
-  var video1 = document.getElementById('videoPlayer1');
-  modal1.addEventListener('hidden.bs.modal', function () {
-    video1.pause();
-  });
-
-  var modal2 = document.getElementById('gallery2');
-  var video2 = document.getElementById('videoPlayer2');
-  modal2.addEventListener('hidden.bs.modal', function () {
-    video2.pause();
-  });
-
-  var modal3 = document.getElementById('gallery3');
-  var video3 = document.getElementById('videoPlayer3');
-  modal3.addEventListener('hidden.bs.modal', function () {
-    video3.pause();
-  });
- var modal4 = document.getElementById('gallery4');
-  var video4 = document.getElementById('videoPlayer4');
-  modal4.addEventListener('hidden.bs.modal', function () {
-    video4.pause();
-  });
-
-  var modal5 = document.getElementById('gallery5');
-  var video5 = document.getElementById('videoPlayer5');
-  modal5.addEventListener('hidden.bs.modal', function () {
-    video5.pause();
-  });
-
-  var modal6 = document.getElementById('gallery6');
-  var video6 = document.getElementById('videoPlayer6');
-  modal6.addEventListener('hidden.bs.modal', function () {
-    video6.pause();
-  });
-  var modal7 = document.getElementById('gallery7');
-  var video7 = document.getElementById('videoPlayer7');
-  modal7.addEventListener('hidden.bs.modal', function () {
-    video7.pause();
-  });
-
-  var modal8 = document.getElementById('gallery8');
-  var video8 = document.getElementById('videoPlayer8');
-  modal8.addEventListener('hidden.bs.modal', function () {
-    video8.pause();
-  });
+ 
 
   function changeActive(event, element) {
    event.preventDefault();
