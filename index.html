@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waste Management</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/wastemanagementlogo.png"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="banner">
+      <video autoplay loop muted>
+        <source src="videos/first_part.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <section class="container d-flex align-items-center gap-4 py-5" id="home">
+        <div
+          class="glass"
+          data-aos="fade-right"
+          data-aos-delay="300"
+          data-aos-duration="800"
+        ></div>
+        <div class="tourist-list order-2 order-lg-1 py-5">
+          <ul class="place-list">
+            <li
+              class="active"
+              data-aos="fade-right"
+              data-aos-delay="500"
+              data-aos-duration="700"
+              data-video="videos/first_part.mp4"
+              data-index="1"
+            >
+              <div
+                class="thumbnail"
+                style="background: url('images/first.jpg')"
+              ></div>
+            </li>
+            <li
+              data-video="videos/second_part.mp4"
+              data-aos="fade-right"
+              data-aos-delay="700"
+              data-aos-duration="700"
+              data-index="2"
+            >
+              <div
+                class="thumbnail"
+                style="background: url('images/second.jpg')"
+              ></div>
+            </li>
+            <li
+              data-video="videos/third_part.mp4"
+              data-aos="fade-right"
+              data-aos-delay="800"
+              data-aos-duration="700"
+              data-index="3"
+            >
+              <div
+                class="thumbnail"
+                style="background: url('images/third.jpg')"
+              ></div>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="container order-1 order-lg-2 mt-5">
+          <h1
+            class="text-white fw-bold custom"
+            data-aos="fade-left"
+            data-aos-delay="500"
+            data-aos-duration="700"
+            style="font-size: 4rem"
+          >
+            Waste Management
+          </h1>
+          <h1
+            class="text-success fw-bold custom"
+            data-aos="fade-left"
+            data-aos-delay="600"
+            data-aos-duration="700"
+            style="font-size: 4rem"
+          >
+            Recycle
+          </h1>
+          <h1
+            class="text-white fw-bold custom"
+            data-aos="fade-left"
+            data-aos-delay="500"
+            data-aos-duration="700"
+            style="font-size: 4rem"
+          >
+            Materials
+          </h1>
+          <div
+            class="lead text-white lh-lg"
+            data-aos="fade-left"
+            data-aos-delay="700"
+            data-aos-duration="700"
+          >
+            Waste management involves responsibly handling, storing, and disposing
+            of waste to minimize its environmental impact. Recycling materials is
+            a crucial part of waste management, where used materials are
+            transformed into new products or raw materials for reuse, reducing the
+            need for virgin resources. This helps conserve resources, reduce
+            energy consumption, and promote a sustainable and circular economy.
+          </div>
+          <div
+            class="explore pt-5"
+            data-aos="fade-left"
+            data-aos-delay="600"
+            data-aos-duration="700"
+          >
+            <a href="#about">
+              <button class="btn btn-primary text-white">Explore</button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="images/wastemanagementlogo.png"
+              alt="Bootstrap"
+              width="50"
+              height="50"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto d-flex gap-3">
+              <li class="nav-item">
+                <a class="nav-link fw-bold custom-ls active" aria-current="page" href="#" onclick="changeActive(event, this)">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold custom-ls" href="#about" onclick="changeActive(event, this)">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold custom-ls" href="#brochure" onclick="changeActive(event, this)">Brochure</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold custom-ls" href="#typesOfWaste" onclick="changeActive(event, this)">Types of Waste</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold custom-ls" href="#gallery" onclick="changeActive(event, this)">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold custom-ls" href="#team" onclick="changeActive(event, this)">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold custom-ls" href="#contact-us" onclick="changeActive(event, this)">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <section class="custom-page py-5" id="about">
+      <div class="container container-lap d-flex align-items-center justify-content-center py-5">
+        <div class="left" style="background: url(images/first.jpg) no-repeat center / cover" data-aos="fade-right" data-aos-delay="600" data-aos-duration="600"></div>
+        <div class="right" data-aos="fade-left" data-aos-delay="600" data-aos-duration="600">
+          <div class="content d-flex flex-column text-center text-md-start align-items-md-start">
+            <h5 class="fw-bold fs-1 fs-lg-4 mb-4">About</h5>
+            <p class="fs-5 fs-lg-6 mb-4 original-text">
+              Proper waste disposal refers to the correct and environmentally conscious way of getting rid of waste materials. It involves following guidelines and regulations set by local authorities to ensure waste is handled in a safe and sustainable manner. Proper waste disposal methods can include recycling, composting, and utilizing designated waste collection services or facilities to minimize pollution and protect human health and the environment.
+            </p>
+            <p class="fs-5 fs-lg-6 mb-4 new-text" style="display: none;">
+              The website focuses exclusively on waste management and provides valuable insights on implementing waste management practices in daily life, specifically targeting students. Our team has curated a comprehensive collection of information encompassing various techniques and methods for effectively managing waste. The content emphasizes practical applications, offering students detailed guidance on incorporating waste management strategies into their routines. Our goal is to equip students with the necessary knowledge and resources to make informed decisions about waste management, ensuring a sustainable future. By presenting relevant information and techniques, we aim to empower students to actively participate in waste reduction and environmental preservation.
+            </p>
+            <a href="#" class="btn fs-5 fs-lg-6 py-2 px-4 my-button read-more">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="brochure-page brochure" id="brochure">
+      <div class="container container-lap d-flex align-items-center justify-content-center py-5">
+        <img class="img-fluid" src="images/brochure1.png" alt="">
+      </div>
+      <div class="container container-lap d-flex align-items-center justify-content-center py-5">
+        <img class="img-fluid" src="images/brochure2.png" alt="">
+      </div>
+    </section>
+
+    
+
+    <section id="typesOfWaste" class="types types-page">
+      <div class="container py-5"> 
+        <div class="heading pb-5">
+          <p 
+              data-aos="fade-right" 
+              data-aos-delay="700" 
+              data-aos-duration="700">
+              Types of waste
+          </p>
+          
+        </div>
+        <div 
+          class="swiper types-slider"
+          data-aos="fade-down" 
+          data-aos-delay="600" 
+          data-aos-duration="700">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide slide" data-name="waste-1">
+                <img src="images/typesofwaste/source-reduction.jpg" alt="">
+                <h3>Source Reduction</h3>
+                <button class="btn">View</button>
+              </div>
+
+              <div class="swiper-slide slide" data-name="waste-2">
+                <img src="images/typesofwaste/recycling (1).jpg" alt="">
+                <h3>Recycling</h3>
+                <button class="btn">View</button>
+              </div>
+
+              <div class="swiper-slide slide" data-name="waste-3">
+                <img src="images/typesofwaste/composting (1).jpg" alt="">
+                <h3>Composting</h3>
+                <button class="btn">View</button>
+              </div>
+
+              <div class="swiper-slide slide" data-name="waste-4">
+                <img src="images/typesofwaste/waste to energy (1).jpg" alt="">
+                <h3>Waste-to-Energy (WtE)</h3>
+                <button class="btn">View</button>
+              </div>
+
+              <div class="swiper-slide slide" data-name="waste-5">
+                <img src="images/typesofwaste/landfilling (1).jpg" alt="">
+                <h3>Landfilling</h3>
+                <button class="btn">View</button>
+              </div>
+
+              <div class="swiper-slide slide" data-name="waste-6">
+                <img src="images/typesofwaste/Incineration (1).jpg" alt="">
+                <h3>Incineration</h3>
+                <button class="btn">View</button>
+              </div>
+
+              <div class="swiper-slide slide" data-name="waste-7">
+                <img src="images/typesofwaste/Hazardous Waste Management (1).jpg" alt="">
+                <h3>Hazardous Waste Management</h3>
+                <button class="btn">View</button>
+              </div>
+
+              <div class="swiper-slide slide" data-name="waste-8">
+                <img src="images/typesofwaste/ewaste (1).jpg" alt="">
+                <h3>E-waste Management</h3>
+                <button class="btn">View</button>
+              </div>
+
+              <div class="swiper-slide slide" data-name="waste-9">
+                <img src="images/typesofwaste/Medical-Waste (1).jpg" alt="">
+                <h3>Medical Waste Management</h3>
+                <button class="btn">View</button>
+              </div>
+              <div class="swiper-slide slide" data-name="waste-10">
+                <img src="images/typesofwaste/Construction (2).jpg" alt="">
+                <h3>Construction and Demolition (C&D) Waste Management</h3>
+                <button class="btn">View</button>
+              </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div> 
+      </div>
+   </section>
+
+   <section class="types-preview-container">
+
+      <div class="types-preview" data-target="waste-1">
+         <div id="close-preview" class="fas fa-times"></div>
+         <img src="images/typesofwaste/source-reduction.jpg" alt="">
+         <div class="content">
+            <h3>Source Reduction</h3>
+            <p>
+              Source reduction, also known as waste prevention, refers to the practices and strategies implemented to minimize the generation of waste materials. 
+               <span id="dots">.....</span>
+               <div id="more">
+                  <p>It involves reducing the overall amount of waste produced at its source, such as through product design, manufacturing process improvements, or consumer behavior changes.</p> 
+               </div>
+            </p>
+         </div>
+
+         <button id="btn" onclick="toggleReadMoreLess(this)">Read More</button>
+      </div>
+
+   <div class="types-preview" data-target="waste-2">
+      <div id="close-preview" class="fas fa-times"></div>
+      <img src="images/typesofwaste/recycling (1).jpg" alt="">
+      <div class="content">
+         <h3>Recycling</h3>
+         <p>
+          Recycling involves the collection, sorting, processing, and transformation of waste materials into new products or materials.
+            <span id="dots">.....</span>
+            <div id="more">
+               <p> It aims to recover valuable resources from waste and reduce the consumption of raw materials, energy usage, and environmental impacts associated with their extraction and production.</p> 
+            </div>
+         </p>
+         <button id="btn" onclick="toggleReadMoreLess(this)">Read More</button>
+      </div>
+   </div>
+
+   <div class="types-preview" data-target="waste-3">
+      <div id="close-preview" class="fas fa-times"></div>
+      <img src="images/typesofwaste/composting (1).jpg" alt="">
+      <div class="content">
+         <h3>Composting</h3>
+         <p>
+            Composting is the natural process of decomposing organic waste materials, such as food scraps, yard trimmings, and other biodegradable materials.               
+            <span id="dots">.....</span>
+            <div id="more">
+               <p>Under controlled conditions, microorganisms break down the waste into nutrient-rich compost, which can be used as a soil amendment to enhance plant growth and soil fertility.</p> 
+            </div>
+         </p>
+         <button id="btn" onclick="toggleReadMoreLess(this)">Read More</button>
+      </div>
+   </div>
+
+   <div class="types-preview" data-target="waste-4">
+      <div id="close-preview" class="fas fa-times"></div>
+      <img src="images/typesofwaste/waste to energy (1).jpg" alt="">
+      <div class="content">
+            <h3>Waste-to-Energy (WtE)</h3>
+            <p>
+              Waste-to-Energy refers to the process of generating energy, usually in the form of electricity or heat, from the combustion or gasification of waste materials.                   
+               <span id="dots">.....</span>
+               <div id="more">
+                  <p>This method helps reduce the volume of waste and can produce renewable energy, but it must be carefully managed to minimize emissions and environmental impacts.</p> 
+               </div>
+            </p>
+            <button id="btn" onclick="toggleReadMoreLess(this)">Read More</button>
+         </div>
+      </div>
+
+   <div class="types-preview" data-target="waste-5">
+      <div id="close-preview" class="fas fa-times"></div>
+      <img src="images/typesofwaste/landfilling (1).jpg" alt="">
+      <div class="content">
+         <h3>Landfilling</h3>
+         <p>
+          Landfilling is the disposal of waste materials into specially designed and engineered areas called landfills. In this method, waste is compacted and buried in layers, with appropriate safeguards to prevent environmental contamination.               
+            <span id="dots">.....</span>
+            <div id="more">
+               <p>Modern landfills employ various technologies to minimize methane emissions and control leachate, a liquid that forms when waste decomposes.</p> 
+            </div>
+         </p>
+         <button id="btn" onclick="toggleReadMoreLess(this)">Read More</button>
+      </div>
+   </div>
+
+   <div class="types-preview" data-target="waste-6">
+      <div id="close-preview" class="fas fa-times"></div>
+      <img src="images/typesofwaste/Incineration (1).jpg" alt="">
+      <div class="content">
+         <h3>Incineration</h3>
+         <p>
+          Incineration involves the controlled combustion of waste materials at high temperatures. It reduces the volume of waste and can generate energy in the form of heat or electricity.
+            <span id="dots">.....</span>
+            <div id="more">
+               <p>However, it must be carefully managed to control emissions, including pollutants and greenhouse gases, through the use of air pollution control systems.</p> 
+            </div>
+         </p>
+         <button id="btn" onclick="toggleReadMoreLess(this)">Read More</button>
+      </div>
+   </div>
+
+   <div class="types-preview" data-target="waste-7">
+      <div id="close-preview" class="fas fa-times"></div>
+      <img src="images/typesofwaste/Hazardous Waste Management (1).jpg" alt="">
+      <div class="content">
+         <h3>Hazardous Waste Management</h3>
+         <p>
+          Hazardous waste management deals with the handling, storage, treatment, and disposal of waste materials that pose a significant risk to human health or the environment.
+            <span id="dots">.....</span>
+            <div id="more">
+               <p>It requires specialized techniques and facilities to ensure the safe management of these hazardous substances.</p> 
+            </div>
+         </p>
+         <button id="btn" onclick="toggleReadMoreLess(this)">Read More</button>
+      </div>
+   </div>
+
+   <div class="types-preview" data-target="waste-8">
+      <div id="close-preview" class="fas fa-times"></div>
+      <img src="images/typesofwaste/ewaste (1).jpg" alt="">
+      <div class="content">
+         <h3>E-waste Management</h3>
+         <p>
+          E-waste management focuses on the proper handling and disposal of electronic waste, such as computers, smartphones, televisions, and other electronic devices.
+            <span id="dots">.....</span>
+            <div id="more">
+               <p>Due to their complex composition and potential for hazardous materials, e-waste requires specialized recycling and treatment processes to recover valuable resources and prevent environmental contamination.</p> 
+            </div>
+         </p>
+         <button id="btn" onclick="toggleReadMoreLess(this)">Read More</button>
+      </div>
+   </div>
+
+   <div class="types-preview" data-target="waste-9">
+      <div id="close-preview" class="fas fa-times"></div>
+      <img src="images/typesofwaste/Medical-Waste (1).jpg" alt="">
+      <div class="content">
+            <h3>Medical Waste Management</h3>
+            <p>
+              Medical waste management involves the proper handling, treatment, and disposal of waste generated by healthcare facilities. It includes various types of waste, such as infectious materials, sharps (needles and scalpels), pharmaceutical waste, and pathological waste. 
+               <span id="dots">.....</span>
+               <div id="more">
+                  <p> Strict regulations and protocols are in place to ensure the safe handling and disposal of medical waste to prevent the spread of diseases and protect public health.</p> 
+               </div>
+            </p>
+            <button id="btn" onclick="toggleReadMoreLess(this)">Read More</button>
+         </div>
+      </div>
+   <div class="types-preview" data-target="waste-10">
+      <div id="close-preview" class="fas fa-times"></div>
+      <img src="images/typesofwaste/Construction (2).jpg" alt="">
+      <div class="content">
+            <h3>Construction and Demolition (C&D) Waste Management</h3>
+            <p>
+              C&D waste management focuses on the proper handling, recycling, and disposal of waste generated during construction, renovation, and demolition activities.
+               <span id="dots">.....</span>
+               <div id="more">
+                  <p> It aims to minimize waste sent to landfills and maximize the recovery and reuse of valuable materials, such as concrete, wood, metals, and plastics, from construction and demolition sites.</p> 
+               </div>
+            </p>
+            <button id="btn" onclick="toggleReadMoreLess(this)">Read More</button>
+         </div>
+      </div>
+   </section>
+
+   <section class="recyle">
+    <div class="py-5" >
+    <header class="text-center"  data-aos="fade-left" 
+    data-aos-delay="600" 
+    data-aos-duration="700">
+      <img src="images/logo (1).png" alt="Recycling Logo" class="logo">
+    </header>
+
+    <h1 class="title text-center"  data-aos="fade-right" 
+    data-aos-delay="600" 
+    data-aos-duration="700">3 Recycling Bin</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" data-aos="fade-right" 
+        data-aos-delay="500" 
+        data-aos-duration="700">
+          <div class="card">
+            <img src="images/blue-paper.png" class="card-img-top" alt="Image 1">
+            <div class="card-body">
+              <h5 class="card-title pb-3">Paper Recycling Bin</h5>
+              <button type="button" class="btn my-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4" data-aos="fade-down" 
+        data-aos-delay="550" 
+        data-aos-duration="700">
+          <div class="card">
+            <img src="images/gray-organic.png" class="card-img-top" alt="Image 2">
+            <div class="card-body">
+              <h5 class="card-title pb-3">Organic Recycling Bin</h5>
+              <button type="button" class="btn my-button" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4" data-aos="fade-left" 
+        data-aos-delay="500" 
+        data-aos-duration="700">
+          <div class="card">
+            <img src="images/orange-plastic.png" class="card-img-top" alt="Image 3">
+            <div class="card-body">
+              <h5 class="card-title pb-3">Plastic Recycling Bin</h5>
+              <button type="button" class="btn my-button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false"
+      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content" style="border: 3px solid #3d081b; border-bottom: 7px solid #3d081b;">
+              <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                      Paper Recycling Bin
+                  </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="row gx-4 gx-lg-5 align-items-center">
+                      <div class="col col-md-5 p-4">
+                          <div class="ratio ratio-1x1">
+                              <img class="card-img-top mb-5 mb-md-0 img-fluid"
+                                  src="images/blue-paper.png" alt="Image" >
+                          </div>
+                      </div>
+                      <div class="col-md-6 pt-3">
+                          <p class="lead">
+                            A paper recycling bin is a specially designed container or receptacle used for collecting and storing paper waste that is intended for recycling. It is typically 
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <button id="modal-close-button" type="button" class="btn btn-secondary"
+                      data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal1" data-bs-backdrop="static" data-bs-keyboard="false"
+      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content" style="border: 3px solid #3d081b; border-bottom: 7px solid #3d081b;">
+              <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                      Organic Recycling Bin
+                  </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="row gx-4 gx-lg-5 align-items-center">
+                      <div class="col col-md-5 p-4">
+                          <div class="ratio ratio-1x1">
+                              <img class="card-img-top mb-5 mb-md-0 img-fluid"
+                                  src="images/gray-organic.png" alt="Image" >
+                          </div>
+                      </div>
+                      <div class="col-md-6 pt-3">
+                          <p class="lead">
+                            An organic recycling bin, also known as a compost bin or a green waste bin, is a container specifically used for collecting and storing organic materials that are suitable for composting or organic recycling. Organic waste includes food scraps, yard trimmings, leaves, grass clippings, and other biodegradable materials. The purpose of an organic recycling bin is to separate organic waste from other types of waste, such as plastic or paper, and divert it from landfills.                </p>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <button id="modal-close-button" type="button" class="btn btn-secondary"
+                      data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="modal fade" id="exampleModal2" data-bs-backdrop="static" data-bs-keyboard="false"
+      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content" style="border: 3px solid #3d081b; border-bottom: 7px solid #3d081b;">
+              <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                      Plastic Recycling Bin
+                  </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="row gx-4 gx-lg-5 align-items-center">
+                      <div class="col col-md-5 p-4">
+                          <div class="ratio ratio-1x1">
+                              <img class="card-img-top mb-5 mb-md-0 img-fluid"
+                                  src="images/orange-plastic.png" alt="Image" >
+                          </div>
+                      </div>
+                      <div class="col-md-6 pt-3">
+                          <p class="lead">
+                            A plastic recycling bin is a designated container or receptacle specifically used for collecting and storing plastic waste that is intended for recycling. It is designed to separate plastic materials from other types of waste to promote the recycling and proper disposal of plastics.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <button id="modal-close-button" type="button" class="btn btn-secondary"
+                      data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  </section>
+
+  <section class="py-5 gallery" id="gallery" >
+    <div class="container">
+      <div class="heading">
+        <p 
+          class="headingText pb-5"
+          data-aos="fade-right" 
+          data-aos-delay="500" 
+          data-aos-duration="600">
+          "Our team is dedicated to promoting awareness among students and others about the operations and importance of waste management."
+        </p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-3 ">
+          <div class="certificate" data-aos="fade-right" 
+          data-aos-delay="400" 
+          data-aos-duration="700">
+            <img data-bs-toggle="modal"
+                data-bs-target="#gallery1" role="button"
+                src="images/gallery/vid2 t.jpg" alt="Certificate"
+                class="w-100">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-3 ">
+          <div class="certificate" data-aos="fade-right" 
+          data-aos-delay="500" 
+          data-aos-duration="700">
+            <img data-bs-toggle="modal"
+                data-bs-target="#gallery2" role="button"
+                src="images/gallery/gallery2 t.jpg" alt="Certificate"
+                class="w-100">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-3 ">
+          <div class="certificate" data-aos="fade-left" 
+          data-aos-delay="550" 
+          data-aos-duration="700">
+            <img data-bs-toggle="modal"
+                data-bs-target="#gallery3" role="button"
+                src="images/gallery/gallery3 t.jpg" alt="Certificate"
+                class="w-100">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-3 ">
+          <div class="certificate" data-aos="fade-left" 
+          data-aos-delay="600" 
+          data-aos-duration="700">
+            <img data-bs-toggle="modal"
+                data-bs-target="#gallery4" role="button"
+                src="images/gallery/gallery4 t.jpg" alt="Certificate"
+                class="w-100">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-3 ">
+          <div class="certificate" data-aos="fade-right" 
+          data-aos-delay="650" 
+          data-aos-duration="700">
+            <img data-bs-toggle="modal"
+                data-bs-target="#gallery5" role="button"
+                src="images/gallery/gallery5 t.jpg" alt="Certificate"
+                class="w-100">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-3 ">
+          <div class="certificate" data-aos="fade-right" 
+          data-aos-delay="700" 
+          data-aos-duration="700">
+            <img data-bs-toggle="modal"
+                data-bs-target="#gallery6" role="button"
+                src="images/gallery/gallery6 t.jpg" alt="Certificate"
+                class="w-100">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-3 ">
+          <div class="certificate" data-aos="fade-left" 
+          data-aos-delay="750" 
+          data-aos-duration="700">
+            <img data-bs-toggle="modal"
+                data-bs-target="#gallery7" role="button"
+                src="images/gallery/gallery7 t.jpg" alt="Certificate"
+                class="w-100">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-3 ">
+          <div class="certificate" data-aos="fade-left" 
+          data-aos-delay="600" 
+          data-aos-duration="700">
+            <img data-bs-toggle="modal"
+                data-bs-target="#gallery8" role="button"
+                src="images/gallery/gallery1 t.jpg" alt="Certificate"
+                class="w-100">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery 1 Card -->
+  <div class="modal fade" id="gallery1" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="border: 3px solid #3d081b; border-bottom: 7px solid #3d081b;">
+            <div class="modal-body">
+                <div class="col p-2">
+                    <div class="ratio ratio-1x1">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/WGtgqbRjmsM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Gallery 2 Card -->
+  <div class="modal fade" id="gallery2" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="border: 3px solid #3d081b; border-bottom: 7px solid #3d081b;">
+            <div class="modal-body">
+                <div class="col p-2">
+                    <div class="ratio ratio-1x1">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/PBQpQF626ss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Gallery 3 Card -->
+  <div class="modal fade" id="gallery3" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="border: 3px solid #3d081b; border-bottom: 7px solid #3d081b;">
+            <div class="modal-body">
+                <div class="col p-2">
+                    <div class="ratio ratio-1x1">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/-46IPtCScxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Gallery 4 Card -->
+  <div class="modal fade" id="gallery4" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="border: 3px solid #3d081b; border-bottom: 7px solid #3d081b;">
+            <div class="modal-body">
+                <div class="col p-2">
+                    <div class="ratio ratio-1x1">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/cubhx-hnW-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Gallery 5 Card -->
+  <div class="modal fade" id="gallery5" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="border: 3px solid #3d081b; border-bottom: 7px solid #3d081b;">
+            <div class="modal-body">
+                <div class="col p-2">
+                    <div class="ratio ratio-1x1">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/4MFo7H9IbKM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Gallery 6 Card -->
+  <div class="modal fade" id="gallery6" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="border: 3px solid #3d081b; border-bottom: 7px solid #3d081b;">
+            <div class="modal-body">
+                <div class="col p-2">
+                    <div class="ratio ratio-1x1">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/ifg4-f3KHdE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Gallery 7 Card -->
+  <div class="modal fade" id="gallery7" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="border: 3px solid #3d081b; border-bottom: 7px solid #3d081b;">
+            <div class="modal-body">
+                <div class="col p-2">
+                    <div class="ratio ratio-1x1">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/IexPGj9ZSLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Gallery 8 Card -->
+  <div class="modal fade" id="gallery8" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="border: 3px solid #3d081b; border-bottom: 7px solid #3d081b;">
+            <div class="modal-body">
+                <div class="col p-2">
+                    <div class="ratio ratio-1x1">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/mvPJgfMKS48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <section class="team" id="team" >
+    <div class="container py-5">
+      <div class="row text-center text-white">
+          <div class="col-lg-8 mx-auto">
+              <h1 class="display-4 team-heading fw-bold" data-aos="fade-left" 
+              data-aos-delay="600" 
+              data-aos-duration="700">Our Team</h1>
+              <p class="lead mb-0 team-heading" data-aos="fade-right" 
+              data-aos-delay="600" 
+              data-aos-duration="700">"Our primary focus is to raise awareness among students and individuals regarding waste management operations and the significance it holds."</p>
+              </p>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row text-center">
+          <div class="col-xl-3 col-sm-6 mb-5" data-aos="fade-down" 
+          data-aos-delay="300" 
+          data-aos-duration="600">
+              <div class="bg-white rounded shadow-sm py-5 px-4"><img src="images/team1.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                  <h5 class="mb-0">Kyle Francis P. Pantig</h5><span class="small text-uppercase text-muted">Website Developer</span>
+              </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-5" data-aos="fade-down" 
+          data-aos-delay="400" 
+          data-aos-duration="600">
+              <div class="bg-white rounded shadow-sm py-5 px-4"><img src="images/team2.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Nathaniel B. Pangilinan</h5><span class="small text-uppercase text-muted">Content Creator</span>
+              </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-5" data-aos="fade-down" 
+          data-aos-delay="500" 
+          data-aos-duration="600">
+              <div class="bg-white rounded shadow-sm py-5 px-4"><img src="images/team3.jpeg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Clear E. Pili</h5><span class="small text-uppercase text-muted">Video Creators</span>
+              </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-5" data-aos="fade-down" 
+          data-aos-delay="600" 
+          data-aos-duration="700">
+              <div class="bg-white rounded shadow-sm py-5 px-4"><img src="images/team4.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">John Jrin P. Pangilinan</h5><span class="small text-uppercase text-muted">Brochure Distributer</span>
+              </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-5" data-aos="fade-down" 
+          data-aos-delay="350" 
+          data-aos-duration="700">
+              <div class="bg-white rounded shadow-sm py-5 px-4"><img src="images/team5.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Aliyana Leigh L. Peranil</h5><span class="small text-uppercase text-muted">Video Creators</span>
+              </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-5" data-aos="fade-down" 
+          data-aos-delay="450" 
+          data-aos-duration="700">
+              <div class="bg-white rounded shadow-sm py-5 px-4"><img src="images/team6.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Cyrelle Dave C. Perez</h5><span class="small text-uppercase text-muted">Brochure Distributer</span>
+              </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-5" data-aos="fade-down" 
+          data-aos-delay="550" 
+          data-aos-duration="700">
+              <div class="bg-white rounded shadow-sm py-5 px-4"><img src="images/team7.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">James Rafael D. Paulino</h5><span class="small text-uppercase text-muted">Video Creators</span>
+              </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-5" data-aos="fade-down" 
+          data-aos-delay="650" 
+          data-aos-duration="700">
+              <div class="bg-white rounded shadow-sm py-5 px-4"><img src="images/team8.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Nikos D. Pineda</h5><span class="small text-uppercase text-muted">Editor</span>
+              </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-5" data-aos="fade-down" 
+          data-aos-delay="650" 
+          data-aos-duration="700">
+              <div class="bg-white rounded shadow-sm py-5 px-4"><img src="images/default-avatar.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">KC Pasion</h5><span class="small text-uppercase text-muted">Video Creators</span>
+              </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-5" data-aos="fade-down" 
+          data-aos-delay="650" 
+          data-aos-duration="700">
+              <div class="bg-white rounded shadow-sm py-5 px-4"><img src="images/default-avatar.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">J-Dee San Andres</h5><span class="small text-uppercase text-muted">Brochure Distributer</span>
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact py-5 " id="contact-us">
+    <div class="container " >
+      <h2 class="h1-responsive font-weight-bold text-center my-4"
+          data-aos="fade-right" 
+          data-aos-delay="400" 
+          data-aos-duration="600">
+          Contact us</h2>
+      <p class="text-center mx-auto mb-5"
+          data-aos="fade-left" 
+          data-aos-delay="400" 
+          data-aos-duration="600">
+      Do you have any questions? Please do not hesitate to contact us directly.
+      </p>
+      <div class="row justify-content-center pb-md-5 pb-1">
+          <div class="col-md-9 mb-md-0 mb-5">
+              <form id="contact-form" name="contact-form" method="POST">
+                  <div class="row">
+                      <div class="col-md-6"
+                            data-aos="fade-right" 
+                            data-aos-delay="500" 
+                            data-aos-duration="600">
+                          <div class="mb-4 mb-md-5">
+                              <input type="text" id="name" autocomplete="off" name="name"
+                                  class="form-control custom-form" placeholder="Name">
+                          </div>
+                      </div>
+                      <div class="col-md-6"
+                            data-aos="fade-left" 
+                            data-aos-delay="500" 
+                            data-aos-duration="600">
+                          <div class="mb-4 mb-md-5">
+                              <input type="text" id="email" autocomplete="off" name="email"
+                                  class="form-control custom-form" placeholder="Email">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row"
+                        data-aos="fade-right" 
+                        data-aos-delay="500" 
+                        data-aos-duration="600">
+                      <div class="col-md-12">
+                          <div class="mb-4 mb-md-5">
+                              <input type="text" id="phonenumber" autocomplete="off" name="subject"
+                                  class="form-control custom-form" placeholder="Phone number">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row"
+                        data-aos="fade-left" 
+                        data-aos-delay="500" 
+                        data-aos-duration="600">
+                      <div class="col-md-12">
+                          <div class="mb-4 mb-md-5">
+                              <textarea id="message" name="message" autocomplete="off" rows="2"
+                                  class="form-control custom-form" placeholder="Comment"></textarea>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="text-start text-md-left"
+                        data-aos="fade-up" 
+                        data-aos-delay="500" 
+                        data-aos-duration="600">
+                      <a class="btn my-button px-5 py-2">Send</a>
+                  </div>
+                  <div class="status"></div>
+              </form>
+          </div>
+      </div>
+      <div class="row-md-3 text-center">
+        <ul class="list-unstyled mb-0 d-flex flex-column flex-md-row justify-content-center gap-5">
+            <li data-aos="fade-down" 
+                data-aos-delay="500" 
+                data-aos-duration="700">
+            <i class="fas fa-map-marker-alt fa-2x custom-contact mt-4">
+            </i>
+                <p>Bacolor, Pampanga, Philippines</p>
+            </li>
+
+            <li data-aos="fade-down" 
+                data-aos-delay="600" 
+                data-aos-duration="700">
+            <i class="fas fa-phone mt-4 fa-2x custom-contact mt-4"></i>
+            </i>
+                <p>+63-912-2341-343</p>
+            </li>
+
+            <li data-aos="fade-down" 
+                data-aos-delay="700" 
+                data-aos-duration="700">
+            <i class="fas fa-envelope mt-4 fa-2x custom-contact mt-4">
+            </i>
+                <p>wastemanagement2c@gmail.com</p>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer class="text-center text-white custom-footer">
+    <div class="container">
+      <section>
+        <div class="row text-center d-flex justify-content-between pt-5">
+          <div class="col-md-1" data-aos="fade-up" 
+                data-aos-delay="400" 
+                data-aos-duration="700">
+            <h6 class="text-uppercase">
+              <a href="#" class="custom-nav-footer text-decoration-none">Home</a>
+            </h6>
+          </div>
+          <div class="col-md-1" data-aos="fade-down" 
+                data-aos-delay="500" 
+                data-aos-duration="700">
+            <h6 class="text-uppercase">
+              <a href="#about" class="custom-nav-footer text-decoration-none">About</a>
+            </h6>
+          </div>
+          <div class="col-md-1" data-aos="fade-up" 
+                data-aos-delay="500" 
+                data-aos-duration="700">
+            <h6 class="text-uppercase">
+              <a href="#brochure" class="custom-nav-footer text-decoration-none">Brochure</a>
+            </h6>
+          </div>
+          <div class="col-md-1" data-aos="fade-down" 
+                data-aos-delay="550" 
+                data-aos-duration="700">
+            <h6 class="text-uppercase">
+              <a href="#typesOfWaste" class="custom-nav-footer text-decoration-none">Types of Waste</a>
+            </h6>
+          </div>
+          <div class="col-md-1" data-aos="fade-up" 
+                data-aos-delay="600" 
+                data-aos-duration="700">
+            <h6 class="text-uppercase">
+              <a href="#gallery" class="custom-nav-footer text-decoration-none">Gallery</a>
+            </h6>
+          </div>
+          <div class="col-md-1" data-aos="fade-down" 
+                data-aos-delay="650" 
+                data-aos-duration="700">
+            <h6 class="text-uppercase">
+              <a href="#team" class="custom-nav-footer text-decoration-none">Team</a>
+            </h6>
+          </div>
+          <div class="col-md-1" data-aos="fade-up" 
+                data-aos-delay="700" 
+                data-aos-duration="700">
+            <h6 class="text-uppercase">
+              <a href="#contact-us" class="custom-nav-footer text-decoration-none">Contact Us</a>
+            </h6>
+          </div>
+        </div>
+      </section>
+
+      <hr class="my-5" />
+
+      <section class="mb-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <p class="des-footer"
+                data-aos="fade-down" 
+                data-aos-delay="700" 
+                data-aos-duration="700" >
+                Proper waste management is not just a responsibility, but a vital step towards preserving our environment for future generations. By adopting sustainable practices and reducing our ecological footprint, we can create a cleaner and healthier world for all.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-center mb-5">
+        <a href="" class="text-white text-decoration-none me-4">
+          <i class="fab fa-facebook-f" data-aos="fade-down" 
+                data-aos-delay="300" 
+                data-aos-duration="700"></i>
+        </a>
+        <a href="" class="text-white text-decoration-none me-4">
+          <i class="fab fa-twitter" data-aos="fade-down" 
+                data-aos-delay="400" 
+                data-aos-duration="700"></i>
+        </a>
+        <a href="" class="text-white text-decoration-none me-4">
+          <i class="fab fa-google" data-aos="fade-down" 
+                data-aos-delay="500" 
+                data-aos-duration="700"></i>
+        </a>
+        <a href="" class="text-white text-decoration-none me-4">
+          <i class="fab fa-instagram" data-aos="fade-down" 
+                data-aos-delay="600" 
+                data-aos-duration="700"></i>
+        </a>
+        <a href="" class="text-white text-decoration-none me-4">
+          <i class="fab fa-linkedin" data-aos="fade-down" 
+                data-aos-delay="700" 
+                data-aos-duration="700"></i>
+        </a>
+      </section>
+    </div>
+
+    <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+      © 2020 Copyright:
+      <a class="text-white text-decoration-none" href="https://mdbootstrap.com/"
+        >Group 5 BSCpE-2C</a
+        >
+    </div>
+  </footer>
+    
+   
+
+    <!-- bootstrap scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
